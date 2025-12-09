@@ -1,0 +1,92 @@
+CustomerID,CompanyName,ContactName,Country,City,Region,customer_key
+ALFKI,Alfreds Futterkiste,Maria Anders,Germany,Berlin,,1
+ANATR,Ana Trujillo Emparedados y helados,Ana Trujillo,Mexico,M xico D.F.,,2
+ANTON,Antonio Moreno Taquer a,Antonio Moreno,Mexico,M xico D.F.,,3
+AROUT,Around the Horn,Thomas Hardy,UK,London,,4
+BERGS,Berglunds snabbk p,Christina Berglund,Sweden,Lule ,,5
+BLAUS,Blauer See Delikatessen,Hanna Moos,Germany,Mannheim,,6
+BLONP,Blondesddsl p re et fils,Fr d rique Citeaux,France,Strasbourg,,7
+BOLID,B lido Comidas preparadas,Mart n Sommer,Spain,Madrid,,8
+BONAP,Bon app',Laurence Lebihan,France,Marseille,,9
+BOTTM,Bottom-Dollar Markets,Elizabeth Lincoln,Canada,Tsawassen,BC,10
+BSBEV,B's Beverages,Victoria Ashworth,UK,London,,11
+CACTU,Cactus Comidas para llevar,Patricio Simpson,Argentina,Buenos Aires,,12
+CENTC,Centro comercial Moctezuma,Francisco Chang,Mexico,M xico D.F.,,13
+CHOPS,Chop-suey Chinese,Yang Wang,Switzerland,Bern,,14
+COMMI,Com rcio Mineiro,Pedro Afonso,Brazil,Sao Paulo,SP,15
+CONSH,Consolidated Holdings,Elizabeth Brown,UK,London,,16
+DRACD,Drachenblut Delikatessen,Sven Ottlieb,Germany,Aachen,,17
+DUMON,Du monde entier,Janine Labrune,France,Nantes,,18
+EASTC,Eastern Connection,Ann Devon,UK,London,,19
+ERNSH,Ernst Handel,Roland Mendel,Austria,Graz,,20
+FAMIA,Familia Arquibaldo,Aria Cruz,Brazil,Sao Paulo,SP,21
+FISSA,FISSA Fabrica Inter. Salchichas S.A.,Diego Roel,Spain,Madrid,,22
+FOLIG,Folies gourmandes,Martine Ranc ,France,Lille,,23
+FOLKO,Folk och f  HB,Maria Larsson,Sweden,Br cke,,24
+FRANK,Frankenversand,Peter Franken,Germany,M nchen,,25
+FRANR,France restauration,Carine Schmitt,France,Nantes,,26
+FRANS,Franchi S.p.A.,Paolo Accorti,Italy,Torino,,27
+FURIB,Furia Bacalhau e Frutos do Mar,Lino Rodriguez,Portugal,Lisboa,,28
+GALED,Galer a del gastr nomo,Eduardo Saavedra,Spain,Barcelona,,29
+GODOS,Godos Cocina T pica,Jos  Pedro Freyre,Spain,Sevilla,,30
+GOURL,Gourmet Lanchonetes,Andr  Fonseca,Brazil,Campinas,SP,31
+GREAL,Great Lakes Food Market,Howard Snyder,USA,Eugene,OR,32
+GROSR,GROSELLA-Restaurante,Manuel Pereira,Venezuela,Caracas,DF,33
+HANAR,Hanari Carnes,Mario Pontes,Brazil,Rio de Janeiro,RJ,34
+HILAA,HILARION-Abastos,Carlos Hern ndez,Venezuela,San Crist bal,T chira,35
+HUNGC,Hungry Coyote Import Store,Yoshi Latimer,USA,Elgin,OR,36
+HUNGO,Hungry Owl All-Night Grocers,Patricia McKenna,Ireland,Cork,Co. Cork,37
+ISLAT,Island Trading,Helen Bennett,UK,Cowes,Isle of Wight,38
+KOENE,K niglich Essen,Philip Cramer,Germany,Brandenburg,,39
+LACOR,La corne d'abondance,Daniel Tonini,France,Versailles,,40
+LAMAI,La maison d'Asie,Annette Roulet,France,Toulouse,,41
+LAUGB,Laughing Bacchus Wine Cellars,Yoshi Tannamuri,Canada,Vancouver,BC,42
+LAZYK,Lazy K Kountry Store,John Steel,USA,Walla Walla,WA,43
+LEHMS,Lehmanns Marktstand,Renate Messner,Germany,Frankfurt a.M.,,44
+LETSS,Let's Stop N Shop,Jaime Yorres,USA,San Francisco,CA,45
+LILAS,LILA-Supermercado,Carlos Gonz lez,Venezuela,Barquisimeto,Lara,46
+LINOD,LINO-Delicateses,Felipe Izquierdo,Venezuela,I. de Margarita,Nueva Esparta,47
+LONEP,Lonesome Pine Restaurant,Fran Wilson,USA,Portland,OR,48
+MAGAA,Magazzini Alimentari Riuniti,Giovanni Rovelli,Italy,Bergamo,,49
+MAISD,Maison Dewey,Catherine Dewey,Belgium,Bruxelles,,50
+MEREP,M re Paillarde,Jean Fresni re,Canada,Montr al,Qu bec,51
+MORGK,Morgenstern Gesundkost,Alexander Feuer,Germany,Leipzig,,52
+NORTS,North/South,Simon Crowther,UK,London,,53
+OCEAN,Oc ano Atl ntico Ltda.,Yvonne Moncada,Argentina,Buenos Aires,,54
+OLDWO,Old World Delicatessen,Rene Phillips,USA,Anchorage,AK,55
+OTTIK,Ottilies K seladen,Henriette Pfalzheim,Germany,K ln,,56
+PARIS,Paris sp cialit s,Marie Bertrand,France,Paris,,57
+PERIC,Pericles Comidas cl sicas,Guillermo Fern ndez,Mexico,M xico D.F.,,58
+PICCO,Piccolo und mehr,Georg Pipps,Austria,Salzburg,,59
+PRINI,Princesa Isabel Vinhos,Isabel de Castro,Portugal,Lisboa,,60
+QUEDE,Que Del cia,Bernardo Batista,Brazil,Rio de Janeiro,RJ,61
+QUEEN,Queen Cozinha,L cia Carvalho,Brazil,Sao Paulo,SP,62
+QUICK,QUICK-Stop,Horst Kloss,Germany,Cunewalde,,63
+RANCH,Rancho grande,Sergio Guti rrez,Argentina,Buenos Aires,,64
+RATTC,Rattlesnake Canyon Grocery,Paula Wilson,USA,Albuquerque,NM,65
+REGGC,Reggiani Caseifici,Maurizio Moroni,Italy,Reggio Emilia,,66
+RICAR,Ricardo Adocicados,Janete Limeira,Brazil,Rio de Janeiro,RJ,67
+RICSU,Richter Supermarkt,Michael Holz,Switzerland,Gen ve,,68
+ROMEY,Romero y tomillo,Alejandra Camino,Spain,Madrid,,69
+SANTG,Sant  Gourmet,Jonas Bergulfsen,Norway,Stavern,,70
+SAVEA,Save-a-lot Markets,Jose Pavarotti,USA,Boise,ID,71
+SEVES,Seven Seas Imports,Hari Kumar,UK,London,,72
+SIMOB,Simons bistro,Jytte Petersen,Denmark,Kobenhavn,,73
+SPECD,Sp cialit s du monde,Dominique Perrier,France,Paris,,74
+SPLIR,Split Rail Beer & Ale,Art Braunschweiger,USA,Lander,WY,75
+SUPRD,Supr mes d lices,Pascale Cartrain,Belgium,Charleroi,,76
+THEBI,The Big Cheese,Liz Nixon,USA,Portland,OR,77
+THECR,The Cracker Box,Liu Wong,USA,Butte,MT,78
+TOMSP,Toms Spezialit ten,Karin Josephs,Germany,M nster,,79
+TORTU,Tortuga Restaurante,Miguel Angel Paolino,Mexico,M xico D.F.,,80
+TRADH,Tradi  o Hipermercados,Anabela Domingues,Brazil,Sao Paulo,SP,81
+TRAIH,Trail's Head Gourmet Provisioners,Helvetius Nagy,USA,Kirkland,WA,82
+VAFFE,Vaffeljernet,Palle Ibsen,Denmark, rhus,,83
+VICTE,Victuailles en stock,Mary Saveley,France,Lyon,,84
+VINET,Vins et alcools Chevalier,Paul Henriot,France,Reims,,85
+WANDK,Die Wandernde Kuh,Rita M ller,Germany,Stuttgart,,86
+WARTH,Wartian Herkku,Pirkko Koskitalo,Finland,Oulu,,87
+WELLI,Wellington Importadora,Paula Parente,Brazil,Resende,SP,88
+WHITC,White Clover Markets,Karl Jablonski,USA,Seattle,WA,89
+WILMK,Wilman Kala,Matti Karttunen,Finland,Helsinki,,90
+WOLZA,Wolski  Zajazd,Zbyszek Piestrzeniewicz,Poland,Warszawa,,91

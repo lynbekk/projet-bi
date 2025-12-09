@@ -1,0 +1,58 @@
+
+use this command to run it : & "C:\Users\hp\Downloads\Python311\python.exe" -m streamlit run scripts/dashboard_streamlit.py
+
+Installation des dépendances:
+
+   Exécuter dans terminal :
+
+   pip install streamlit pandas numpy plotly reportlab
+
+   Optionnel (uniquement si tu veux recharger depuis SQL Server) :
+
+   pip install sqlalchemy pyodbc
+
+Procédure d’exécution & reproduction des résultats
+   Extraction depuis SQL Server (si CSV non fournis)
+   python extract_sqlserver.py
+
+1. Exporte les données Northwind depuis SSMS.
+2. Génère les fichiers CSV bruts.
+
+ Transformation (ETL)
+    python transform.py
+
+Ce script effectue :
+
+Action	Résultat
+Nettoyage & suppression valeurs nulles	Dataset fiable
+Jointure tables produits, time, catégories	Structure étoile
+Calcul line_total = quantity * unit_price	KPI exploitable
+
+Résultat final → fichier propre utilisé par le dashboard
+
+Chargement dans Data Warehouse
+    python load_dwh.py
+
+Exécution du Dashboard BI
+    streamlit run dashboard_streamlit.py
+
+
+Une interface s’ouvre avec :
+
+Élément affiché	Description
+     KPIs	CA total, panier moyen, top produit, clients
+     Graphiques	CA mensuel, top produits, part des catégories
+     Prévision IA simple	Horizon sélectionnable (1–24 mois)
+     Export PDF	Rapport synthèse généré automatiquement
+ Reproduire exactement ton résultat final
+
+1. Utiliser les 4 CSV fournis
+2.Lancer scripts dans l’ordre
+3.Ouvrir Streamlit
+4.Générer un PDF si nécessaire
+
+ Commandes récapitulatives
+    python extract_sqlserver.py
+    python transform.py
+    python load_dwh.py
+    streamlit run dashboard_streamlit.py
