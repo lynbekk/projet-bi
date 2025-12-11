@@ -1,58 +1,109 @@
 
 use this command to run it : & "C:\Users\hp\Downloads\Python311\python.exe" -m streamlit run scripts/dashboard_streamlit.py
+Lancer le Dashboard
 
-Installation des dépendances:
+Utiliser la commande suivante (car Python est installé dans ton dossier Downloads) :
 
-   Exécuter dans terminal :
+& "C:\Users\hp\Downloads\Python311\python.exe" -m streamlit run scripts/dashboard_streamlit.py
 
-   pip install streamlit pandas numpy plotly reportlab
+ Installation des dépendances
 
-   Optionnel (uniquement si tu veux recharger depuis SQL Server) :
+Exécuter dans le terminal :
 
-   pip install sqlalchemy pyodbc
+pip install streamlit pandas numpy plotly reportlab
 
-Procédure d’exécution & reproduction des résultats
-   Extraction depuis SQL Server (si CSV non fournis)
-   python extract_sqlserver.py
 
-1. Exporte les données Northwind depuis SSMS.
-2. Génère les fichiers CSV bruts.
+ extraire depuis SQL Server ou Access :
 
- Transformation (ETL)
-    python transform.py
+pip install sqlalchemy pyodbc
+
+ Sources de données utilisées
+Source	Description
+SQL Server	Base Northwind officielle
+Access (.accdb)	Version Access de Northwind (tables différentes mais structure similaire)
+
+Les deux sources ont été unifiées dans un seul fichier final :
+fact_order_unified.csv
+
+Étapes du projet (reproduire exactement ton pipeline)
+ Extraction SQL Server
+
+si les CSV sont déjà fournis:
+
+python extract_sqlserver.py
+
+
+Ce script :
+
+Action	Résultat
+Connexion SQL Server	Extraction Northwind
+Export CSV	fact_order.csv + dimensions
+ Extraction Access (.accdb):
+python scripts/extract_access.py
+
+
+ Fusion SQL + Access (ETL avancé):
+python scripts/transform_merge_access.py
+
+
+Ce script :
+
+Action	Résultat
+Normalisation des colonnes Access	Renommage, types, compatibilité
+Jointure Orders + Order Details	Construction d’un pseudo-fact Access
+Calcul line_total	Valeurs analytiques
+Fusion SQL + Access	Génération de fact_order_unified.csv
+
+Ce fichier remplace automatiquement fact_order.csv dans le dashboard.
+
+Transformation BI (ETL):
+python transform.py
+
 
 Ce script effectue :
 
-Action	Résultat
+Étape	Résultat
 Nettoyage & suppression valeurs nulles	Dataset fiable
-Jointure tables produits, time, catégories	Structure étoile
-Calcul line_total = quantity * unit_price	KPI exploitable
-
-Résultat final → fichier propre utilisé par le dashboard
-
-Chargement dans Data Warehouse
-    python load_dwh.py
-
-Exécution du Dashboard BI
-    streamlit run dashboard_streamlit.py
+Jointure produits, time, catégories	Modèle en étoile
+Calcul line_total	KPI exploitable
+ Chargement dans le Data Warehouse:
+python load_dwh.py
 
 
-Une interface s’ouvre avec :
+Cette étape structure le modèle final dans un DWH.
 
-Élément affiché	Description
-     KPIs	CA total, panier moyen, top produit, clients
-     Graphiques	CA mensuel, top produits, part des catégories
-     Prévision IA simple	Horizon sélectionnable (1–24 mois)
-     Export PDF	Rapport synthèse généré automatiquement
- Reproduire exactement ton résultat final
+ Exécuter le Dashboard Streamlit:
+streamlit run dashboard_streamlit.py
 
-1. Utiliser les 4 CSV fournis
-2.Lancer scripts dans l’ordre
-3.Ouvrir Streamlit
-4.Générer un PDF si nécessaire
 
- Commandes récapitulatives
-    python extract_sqlserver.py
-    python transform.py
-    python load_dwh.py
-    streamlit run dashboard_streamlit.py
+Le tableau de bord contient :
+
+Élément	Description
+KPIs	CA total, panier moyen, clients uniques, top produit
+Graphiques	CA mensuel, top produits, part catégories
+Prévision	Trend line + croissance (%) (1 à 24 mois)
+Export PDF	Rapport automatique
+ Pour reproduire TON résultat exact:
+
+Utiliser les CSV fournis (SQL + Access)
+
+Lancer les scripts dans l’ordre :
+
+extract_sqlserver.py   (si besoin)
+extract_access.py
+transform_merge_access.py
+transform.py
+load_dwh.py
+
+
+Ouvrir Streamlit
+
+Générer le PDF si nécessaire
+
+Commandes récapitulatives
+python extract_sqlserver.py
+python extract_access.py
+python transform_merge_access.py
+python transform.py
+python load_dwh.py
+streamlit run scripts/dashboard_streamlit.py

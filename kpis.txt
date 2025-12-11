@@ -1,3 +1,0 @@
-CA total = 1,265,793.04 $
-Meilleur client = QUICK-Stop
-Remise moyenne = 5.62 %

@@ -98,7 +98,8 @@ df["year_month"] = pd.to_datetime(
 
 # ===================== HEADER =====================
 st.markdown("<div class='title'> Business Intelligence – Northwind</div>", unsafe_allow_html=True)
-st.markdown("<div class='subtitle'>Dashboard complet — KPIs, visualisations, filtres et prévisions.</div>", unsafe_allow_html=True)
+
+
 st.write("")
 
 # ===================== SIDEBAR FILTERS =====================
